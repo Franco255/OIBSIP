@@ -6,7 +6,32 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Simple Calculator</title>
 </head>
-<body class="bg-cyan-700 ">
-    <h1 class="text-4xl">Simple Calculator</h1>
+<body class="bg-cyan-700 flex  items-center justify-center h-screen">
+    <div id="calculator" class="bg-slate-300 p-6 rounded shadow-xl">
+        <input type="text" id="display" class="w-full mb-4 p-2 border border-cyan-700 rounded" readonly>
+        <div class="grid grid-cols-4 gap-2">
+            <button class="number font-bold border border-cyan-700 hover:bg-slate-500" type="button">1</button>
+            <button class="number font-bold border border-cyan-700 hover:bg-slate-500" type="button">2</button>
+            <button class="number font-bold border border-cyan-700 hover:bg-slate-500" type="button">3</button>
+            <button class="operator font-bold border border-cyan-700 hover:bg-slate-500" type="button">/</button>
+            <button class="number font-bold border border-cyan-700 hover:bg-slate-500" type="button">4</button>
+            <button class="number font-bold border border-cyan-700 hover:bg-slate-500" type="button">5</button>
+            <button class="number font-bold border border-cyan-700 hover:bg-slate-500" type="button">6</button>
+            <button class="operator font-bold border border-cyan-700 hover:bg-slate-500" type="button">*</button>
+            <button class="number font-bold border border-cyan-700 hover:bg-slate-500" type="button">7</button>
+            <button class="number font-bold border border-cyan-700 hover:bg-slate-500" type="button ">8</button>
+            <button class="number font-bold border border-cyan-700 hover:bg-slate-500" type="button">9</button>
+            <button class="operator font-bold border border-cyan-700 hover:bg-slate-500" type="button">-</button>
+            <button class="number col-span-2 font-bold border border-cyan-700 hover:bg-slate-500" type="button">0</button>
+            <button class="operator font-bold border border-cyan-700 hover:bg-slate-500" type="button">.</button>
+            <button class="operator font-bold border border-cyan-700 hover:bg-slate-500" type="button">+</button>
+            <button id="equals" class="equals col-span-4 font-bold border border-cyan-700 hover:bg-slate-500" type="button">=</button>
+            <button id="clear" class="col-span-2 font-bold border border-cyan-700 hover:bg-slate-500" type="button">C</button>
+            <button id="delete" class="col-span-2 font-bold border border-cyan-700 hover:bg-slate-500" type="button">DEL</button>
+        </div>
+        
+        <script src="app.js"></script>
+    </div>
+    
 </body>
 </html>
